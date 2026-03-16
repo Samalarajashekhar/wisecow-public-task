@@ -12,7 +12,7 @@ get_api() {
 }
 
 handleRequest() {
-    # 1) Process the request .....
+    # 1) Process the request .......
 	get_api
 	mod=`fortune`
 
