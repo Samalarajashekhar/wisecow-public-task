@@ -24,9 +24,7 @@ jobs:
 
     - name: Push Docker Image
       run: |
-         docker push rajashekar121/wisecow-task:${{ github.run_number }} || \
-         docker push rajashekar121/wisecow-task:${{ github.run_number }}
-
+         docker push rajashekar121/wisecow-task:${{ github.run_number }} 
   deploy:
     needs: build
     runs-on: self-hosted
