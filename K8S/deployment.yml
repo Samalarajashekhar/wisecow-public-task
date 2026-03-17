@@ -15,7 +15,10 @@ spec:
     spec:
       containers:
       - name: wisecow
-        image: rajashekar121/wisecow-task:${{ github.run_number }} 
+        image: rajashekar121/wisecow-task:${{ github.run_number }}
+        imagePullPolicy: Always
+    ports:
+      - containerPort: 80
         ports:
         - containerPort: 4499
         
