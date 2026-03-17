@@ -13,7 +13,7 @@ spec:
       labels:
         app: wisecow
     spec:
-      container:
+      containers:
       - name: wisecow
         image: ${DOCKER_REGISTRY}/${DOCKER_IMAGE}:${BUILD_NUMBER}
         ports:
