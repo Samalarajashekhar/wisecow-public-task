@@ -33,6 +33,7 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Deploy to Minikube
+      shell: 'C:\Program Files\Git\bin\bash.exe'
       run: |
         export DOCKER_IMAGE=rajashekar121/wisecow-task
         export BUILD_NUMBER=${{ github.run_number }}
