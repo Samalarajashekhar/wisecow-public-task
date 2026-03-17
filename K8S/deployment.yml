@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: wisecow
-        image: ${DOCKER_REGISTRY}/${DOCKER_IMAGE}:${BUILD_NUMBER}
+        image: rajashekar121/wisecow-task:${{ github.run_number }} 
         ports:
         - containerPort: 4499
         
